@@ -1,5 +1,5 @@
 const getAdvice = () => {
-    fetch("https://api.adviceslip.com/advice")
+    fetch("https://api.adviceslip.com/advice",{cache: 'reload'})
     .then ((response) => response.json())
     .then ((data) => {
         slip = data.slip
